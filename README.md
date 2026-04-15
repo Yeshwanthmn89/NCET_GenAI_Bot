@@ -1,1 +1,2 @@
-# NCET_GenAI_Bot
+# Yeshwanth mn
+Mca departmentCET_GenAI_Bot
