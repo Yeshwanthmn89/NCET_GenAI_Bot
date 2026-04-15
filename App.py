@@ -14,7 +14,7 @@ if st.button("Generate Content"):
         model="llama-3.1-70b-versatile",
         messages=[{"role": "user", "content": prompt}]
     )
-  st.session_state.text = response.choices[0].message.content
+    st.session_state.text = response.choices[0].message.content
     text =response.choices[0].message.content
     st.write(text)
 # After Content Create - Download The File
@@ -26,7 +26,7 @@ if "text" in st.session_state:
             file_name="marketing_copy.txt",
             mime="text/plain"
         )
-    else:
+else:
         st.info("Generate content first")
 
 
